@@ -1,0 +1,372 @@
+{
+  "@context" : [ "http://www.w3.org/ns/csvw", {
+    "@language" : "en"
+  } ],
+  "rdfs:comment" : [ "inspired by https://www.w3.org/TR/2015/REC-tabular-data-model-20151217/" ],
+  "tables" : [ {
+    "@context" : [ "http://www.w3.org/ns/csvw", {
+      "@language" : "en"
+    } ],
+    "rdfs:comment" : [ "inspired by https://www.w3.org/TR/2015/REC-tabular-data-model-20151217/" ],
+    "url" : "scar_diet.csv",
+    "dcterms:bibliographicCitation" : "Scientific Committee on Antarctic Research. (2023). SCAR Southern Ocean Diet and Energetics Database (2023-04-04) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.7796465 hash://md5/e41e29d8fb3c2d731f292ec08798cf6b hash://md5/05abf23c0b9e5f4bc721ff407455af0a hash://sha256/7a344b858ab8d1daeca1da49843e8bf957f1116ff9e10a29176ab5c02cb49bef",
+    "delimiter" : ",",
+    "headerRowCount" : 1,
+    "interactionTypeName": "preysOn",
+    "interactionTypeId": "http://purl.obolibrary.org/obo/RO_0002439",
+    "null" : [ "" ],
+    "tableSchema" : {
+      "columns" : [ {
+        "name" : "record_id",
+        "titles" : "record_id",
+        "datatype" : "string"
+      }, {
+        "name" : "referenceId",
+        "titles" : "source_id",
+        "datatype" : "string"
+      }, {
+        "name" : "original_record_id",
+        "titles" : "original_record_id",
+        "datatype" : "string"
+      }, {
+        "name" : "localityName",
+        "titles" : "location",
+        "datatype" : "string"
+      }, {
+        "name" : "decimalLongitude",
+        "titles" : "west",
+        "datatype" : "string"
+      }, {
+        "name" : "east",
+        "titles" : "east",
+        "datatype" : "string"
+      }, {
+        "name" : "decimalLatitude",
+        "titles" : "south",
+        "datatype" : "string"
+      }, {
+        "name" : "north",
+        "titles" : "north",
+        "datatype" : "string"
+      }, {
+        "name" : "altitude_min",
+        "titles" : "altitude_min",
+        "datatype" : "string"
+      }, {
+        "name" : "altitude_max",
+        "titles" : "altitude_max",
+        "datatype" : "string"
+      }, {
+        "name" : "depth_min",
+        "titles" : "depth_min",
+        "datatype" : "string"
+      }, {
+        "name" : "depth_max",
+        "titles" : "depth_max",
+        "datatype" : "string"
+      }, {
+        "name" : "http://rs.tdwg.org/dwc/terms/eventDate",
+        "titles" : "observation_date_start",
+        "datatype" : "string"
+      }, {
+        "name" : "observation_date_end",
+        "titles" : "observation_date_end",
+        "datatype" : "string"
+      }, {
+        "name" : "predator_name",
+        "titles" : "predator_name",
+        "datatype" : "string"
+      }, {
+        "name" : "predator_name_original",
+        "titles" : "predator_name_original",
+        "datatype" : "string"
+      }, {
+        "name" : "sourceTaxonId",
+        "titles" : "predator_aphia_id",
+        "datatype": {
+          "base" : "string",
+          "valueUrl" : "urn:lsid:marinespecies.org:taxname:{sourceTaxonId}"
+        }
+      }, {
+        "name" : "sourceTaxonRankName",
+        "titles" : "predator_worms_rank",
+        "datatype" : "string"
+      }, {
+        "name" : "sourceTaxonKingdomName",
+        "titles" : "predator_worms_kingdom",
+        "datatype" : "string"
+      }, {
+        "name" : "sourceTaxonPhylumName",
+        "titles" : "predator_worms_phylum",
+        "datatype" : "string"
+      }, {
+        "name" : "sourceTaxonClassName",
+        "titles" : "predator_worms_class",
+        "datatype" : "string"
+      }, {
+        "name" : "sourceTaxonOrderName",
+        "titles" : "predator_worms_order",
+        "datatype" : "string"
+      }, {
+        "name" : "sourceTaxonFamilyName",
+        "titles" : "predator_worms_family",
+        "datatype" : "string"
+      }, {
+        "name" : "sourceTaxonGenusName",
+        "titles" : "predator_worms_genus",
+        "datatype" : "string"
+      }, {
+        "name" : "predator_group_soki",
+        "titles" : "predator_group_soki",
+        "datatype" : "string"
+      }, {
+        "name" : "sourceTaxonLifeStageName",
+        "titles" : "predator_life_stage",
+        "datatype" : "string"
+      }, {
+        "name" : "predator_breeding_stage",
+        "titles" : "predator_breeding_stage",
+        "datatype" : "string"
+      }, {
+        "name" : "sourceTaxonSexName",
+        "titles" : "predator_sex",
+        "datatype" : "string"
+      }, {
+        "name" : "predator_sample_count",
+        "titles" : "predator_sample_count",
+        "datatype" : "string"
+      }, {
+        "name" : "predator_size_min",
+        "titles" : "predator_size_min",
+        "datatype" : "string"
+      }, {
+        "name" : "predator_size_max",
+        "titles" : "predator_size_max",
+        "datatype" : "string"
+      }, {
+        "name" : "predator_size_mean",
+        "titles" : "predator_size_mean",
+        "datatype" : "string"
+      }, {
+        "name" : "predator_size_sd",
+        "titles" : "predator_size_sd",
+        "datatype" : "string"
+      }, {
+        "name" : "predator_size_units",
+        "titles" : "predator_size_units",
+        "datatype" : "string"
+      }, {
+        "name" : "predator_size_notes",
+        "titles" : "predator_size_notes",
+        "datatype" : "string"
+      }, {
+        "name" : "predator_mass_min",
+        "titles" : "predator_mass_min",
+        "datatype" : "string"
+      }, {
+        "name" : "predator_mass_max",
+        "titles" : "predator_mass_max",
+        "datatype" : "string"
+      }, {
+        "name" : "predator_mass_mean",
+        "titles" : "predator_mass_mean",
+        "datatype" : "string"
+      }, {
+        "name" : "predator_mass_sd",
+        "titles" : "predator_mass_sd",
+        "datatype" : "string"
+      }, {
+        "name" : "predator_mass_units",
+        "titles" : "predator_mass_units",
+        "datatype" : "string"
+      }, {
+        "name" : "predator_mass_notes",
+        "titles" : "predator_mass_notes",
+        "datatype" : "string"
+      }, {
+        "name" : "predator_sample_id",
+        "titles" : "predator_sample_id",
+        "datatype" : "string"
+      }, {
+        "name" : "targetTaxonName",
+        "titles" : "prey_name",
+        "datatype" : "string"
+      }, {
+        "name" : "prey_name_original",
+        "titles" : "prey_name_original",
+        "datatype" : "string"
+      }, {
+        "name" : "targetTaxonId",
+        "titles" : "prey_aphia_id",
+        "datatype": {
+          "base" : "string",
+          "valueUrl" : "urn:lsid:marinespecies.org:taxname:{targetTaxonId}"
+        }
+      }, {
+        "name" : "targetTaxonRankName",
+        "titles" : "prey_worms_rank",
+        "datatype" : "string"
+      }, {
+        "name" : "targetTaxonKingdomName",
+        "titles" : "prey_worms_kingdom",
+        "datatype" : "string"
+      }, {
+        "name" : "targetTaxonPhylumName",
+        "titles" : "prey_worms_phylum",
+        "datatype" : "string"
+      }, {
+        "name" : "targetTaxonClassName",
+        "titles" : "prey_worms_class",
+        "datatype" : "string"
+      }, {
+        "name" : "targetTaxonOrderName",
+        "titles" : "prey_worms_order",
+        "datatype" : "string"
+      }, {
+        "name" : "targetTaxonFamilyName",
+        "titles" : "prey_worms_family",
+        "datatype" : "string"
+      }, {
+        "name" : "targetTaxonGenusName",
+        "titles" : "prey_worms_genus",
+        "datatype" : "string"
+      }, {
+        "name" : "prey_group_soki",
+        "titles" : "prey_group_soki",
+        "datatype" : "string"
+      }, {
+        "name" : "prey_is_aggregate",
+        "titles" : "prey_is_aggregate",
+        "datatype" : "string"
+      }, {
+        "name" : "targetTaxonLifeStageName",
+        "titles" : "prey_life_stage",
+        "datatype" : "string"
+      }, {
+        "name" : "targetTaxonSexName",
+        "titles" : "prey_sex",
+        "datatype" : "string"
+      }, {
+        "name" : "prey_sample_count",
+        "titles" : "prey_sample_count",
+        "datatype" : "string"
+      }, {
+        "name" : "prey_size_min",
+        "titles" : "prey_size_min",
+        "datatype" : "string"
+      }, {
+        "name" : "prey_size_max",
+        "titles" : "prey_size_max",
+        "datatype" : "string"
+      }, {
+        "name" : "prey_size_mean",
+        "titles" : "prey_size_mean",
+        "datatype" : "string"
+      }, {
+        "name" : "prey_size_sd",
+        "titles" : "prey_size_sd",
+        "datatype" : "string"
+      }, {
+        "name" : "prey_size_units",
+        "titles" : "prey_size_units",
+        "datatype" : "string"
+      }, {
+        "name" : "prey_size_notes",
+        "titles" : "prey_size_notes",
+        "datatype" : "string"
+      }, {
+        "name" : "prey_mass_min",
+        "titles" : "prey_mass_min",
+        "datatype" : "string"
+      }, {
+        "name" : "prey_mass_max",
+        "titles" : "prey_mass_max",
+        "datatype" : "string"
+      }, {
+        "name" : "prey_mass_mean",
+        "titles" : "prey_mass_mean",
+        "datatype" : "string"
+      }, {
+        "name" : "prey_mass_sd",
+        "titles" : "prey_mass_sd",
+        "datatype" : "string"
+      }, {
+        "name" : "prey_mass_units",
+        "titles" : "prey_mass_units",
+        "datatype" : "string"
+      }, {
+        "name" : "prey_mass_notes",
+        "titles" : "prey_mass_notes",
+        "datatype" : "string"
+      }, {
+        "name" : "fraction_diet_by_weight",
+        "titles" : "fraction_diet_by_weight",
+        "datatype" : "string"
+      }, {
+        "name" : "fraction_diet_by_prey_items",
+        "titles" : "fraction_diet_by_prey_items",
+        "datatype" : "string"
+      }, {
+        "name" : "fraction_occurrence",
+        "titles" : "fraction_occurrence",
+        "datatype" : "string"
+      }, {
+        "name" : "prey_items_included",
+        "titles" : "prey_items_included",
+        "datatype" : "string"
+      }, {
+        "name" : "accumulated_hard_parts_treatment",
+        "titles" : "accumulated_hard_parts_treatment",
+        "datatype" : "string"
+      }, {
+        "name" : "qualitative_dietary_importance",
+        "titles" : "qualitative_dietary_importance",
+        "datatype" : "string"
+      }, {
+        "name" : "consumption_rate_min",
+        "titles" : "consumption_rate_min",
+        "datatype" : "string"
+      }, {
+        "name" : "consumption_rate_max",
+        "titles" : "consumption_rate_max",
+        "datatype" : "string"
+      }, {
+        "name" : "consumption_rate_mean",
+        "titles" : "consumption_rate_mean",
+        "datatype" : "string"
+      }, {
+        "name" : "consumption_rate_sd",
+        "titles" : "consumption_rate_sd",
+        "datatype" : "string"
+      }, {
+        "name" : "consumption_rate_units",
+        "titles" : "consumption_rate_units",
+        "datatype" : "string"
+      }, {
+        "name" : "consumption_rate_notes",
+        "titles" : "consumption_rate_notes",
+        "datatype" : "string"
+      }, {
+        "name" : "identification_method",
+        "titles" : "identification_method",
+        "datatype" : "string"
+      }, {
+        "name" : "quality_flag",
+        "titles" : "quality_flag",
+        "datatype" : "string"
+      }, {
+        "name" : "is_secondary_data",
+        "titles" : "is_secondary_data",
+        "datatype" : "string"
+      }, {
+        "name" : "notes",
+        "titles" : "notes",
+        "datatype" : "string"
+      }, {
+        "name" : "last_modified",
+        "titles" : "last_modified",
+        "datatype" : "string"
+      } ]
+    }
+  } ]
+}
